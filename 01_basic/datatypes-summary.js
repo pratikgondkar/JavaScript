@@ -23,12 +23,36 @@ let myObj = {
 }
 
 const myFunction = function() {
-    console.log("Hello World");
+    // console.log("Hello World");
 }
 
-console.log(typeof BigNumber);
+// console.log(typeof BigNumber);
 
 
 // Reference (Non Primittive)
 
 // Array, Object, Functions
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// stack (Primitive), Heap (Non Primitive)
+
+let myYoutubeChannelName = "pratikgondkardotcom"
+let anotherName = (myYoutubeChannelName)
+
+anotherName = "RadhaGondkar"
+
+console.log(myYoutubeChannelName)
+console.log(anotherName)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "pratik@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
