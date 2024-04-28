@@ -44,8 +44,48 @@ function loginUserMessage(userName = "sam") {
     return `${userName} just logged in`
 }
 
-console.log(loginUserMessage("pratik"));
+// console.log(loginUserMessage("pratik"));
 // console.log(loginUserMessage());
 
+// function calututeCardPrice(num1) {
+//     return num1
+// }
+
+//console.log(calututeCardPrice(2));
+
+// function calututeCardPrice(...num1) { // rest operator
+//     return num1
+// }
+
+// console.log(calututeCardPrice(200, 400, 600));
+
+function calututeCardPrice(val1, val2, ...num1) { // rest operator
+    return num1
+}
+
+// console.log(calututeCardPrice(200, 400, 600, 800));
+
+const user = {
+    username: "pratik",
+    price: 999
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 600, 800]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArray));
 
 
